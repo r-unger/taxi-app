@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "plain-reactnative-expo-app",
-    "slug": "plain-reactnative-expo-app",
+    "name": "taxi-app",
+    "slug": "taxi-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
