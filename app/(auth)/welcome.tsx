@@ -9,6 +9,7 @@ import CustomButton from '@/components/CustomButton';
 const Welcome = () => {
   const swiperRef = useRef<Swiper>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const isLastSlide = activeIndex === onboarding.length - 1;
 
   return (
     <SafeAreaView className="flex h-full items-center justify-between bg-white">
@@ -47,7 +48,15 @@ const Welcome = () => {
         ))}
       </Swiper>
 
-      <CustomButton title="Next" className="w-11/12 mt-10" />
+      <CustomButton
+        title={isLastSlide ? "Get Started" : "Next"}
+        onPress={() =>
+          isLastSlide
+            ? router.replace("/(auth)/sign-up")
+            : swiperRef.current?.scrollBy(1)
+        }
+        className="w-11/12 mt-10"
+      />
     </SafeAreaView >
   );
 };
