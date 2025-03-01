@@ -35,4 +35,6 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-app-example
+# local dev files
+.vscode/
+
