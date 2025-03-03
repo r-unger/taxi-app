@@ -25,8 +25,8 @@ const Welcome = () => {
       <Swiper
         ref={swiperRef}
         loop={false}
-        dot={<View className='w-[32px] h-[4px] mx-1 bg-[#E2E8F0] rounded-full' />}
-        activeDot={<View className='w-[32px] h-[4px] mx-1 bg-[#0286FF] rounded-full' />}
+        dot={<View className='w-[32px] h-[4px] mx-1 bg-secondary-400 rounded-full' />}
+        activeDot={<View className='w-[32px] h-[4px] mx-1 bg-primary-500 rounded-full' />}
         onIndexChanged={(index) => setActiveIndex(index)}
       >
         {onboarding.map((item) => (
@@ -41,7 +41,7 @@ const Welcome = () => {
                 {item.title}
               </Text>
             </View>
-            <Text className='text-lg font-JakartaSemiBold text-center text-[#858585] mx-10 mt-3'>
+            <Text className='text-lg font-JakartaSemiBold text-center text-secondary-700 mx-10 mt-3'>
               {item.description}
             </Text>
           </View>
