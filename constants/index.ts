@@ -74,23 +74,23 @@ export const icons = {
 export const onboarding = [
   {
     id: 1,
-    title: "The perfect ride is just a tap away!",
+    title: "Nie war Taxifahren so einfach!",
     description:
-      "Your journey begins with Ryde. Find your ideal ride effortlessly.",
+      "Ihre Reise beginnt hier. Finden Sie Ihr Taxi ohne Aufwand.",
     image: images.onboarding1,
   },
   {
     id: 2,
-    title: "Best car in your hands with Ryde",
+    title: "Das beste Auto für Ihre Reise",
     description:
-      "Discover the convenience of finding your perfect ride with Ryde",
+      "Entdecken Sie den Komfort und die Bequemlichkeit dieser App.",
     image: images.onboarding2,
   },
   {
     id: 3,
-    title: "Your ride, your way. Let's go!",
+    title: "Es ist Ihre Fahrt.\nAuf geht's!",
     description:
-      "Enter your destination, sit back, and let us take care of the rest.",
+      "Geben Sie Ihr Ziel ein und lehnen sich zurück. Lassen Sie uns den Rest machen.",
     image: images.onboarding3,
   },
 ];
