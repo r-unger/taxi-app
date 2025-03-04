@@ -19,7 +19,7 @@ const Welcome = () => {
         }}
         className="w-full flex justify-end items-end p-5"
       >
-        <Text className='text-black text-md font-JakartaBold'>Überspringen</Text>
+        <Text className='text-black text-md font-AsapBold'>Überspringen</Text>
       </TouchableOpacity >
 
       <Swiper
@@ -41,7 +41,7 @@ const Welcome = () => {
                 {item.title}
               </Text>
             </View>
-            <Text className='text-lg font-JakartaSemiBold text-center text-secondary-700 mx-10 mt-3'>
+            <Text className='text-lg font-AsapSemiBold text-center text-secondary-700 mx-10 mt-3'>
               {item.description}
             </Text>
           </View>

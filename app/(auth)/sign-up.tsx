@@ -22,7 +22,7 @@ const SignUp = () => {
             source={images.signUpCar}
             className='z-0 w-full h-[250px]'
           />
-          <Text className='text-2xl text-black font-JakartaSemiBold absolute bottom-5 left-5'>
+          <Text className='text-2xl text-black font-AsapSemiBold absolute bottom-5 left-5'>
             Erstellen Sie Ihr Konto
           </Text>
         </View>

@@ -5,13 +5,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Jakarta: ['Jakarta', 'sans-serif'],
-        JakartaBold: ['Jakarta-Bold', 'sans-serif'],
-        JakartaExtraBold: ['Jakarta-ExtraBold', 'sans-serif'],
-        JakartaExtraLight: ['Jakarta-ExtraLight', 'sans-serif'],
-        JakartaLight: ['Jakarta-Light', 'sans-serif'],
-        JakartaMedium: ['Jakarta-Medium', 'sans-serif'],
-        JakartaSemiBold: ['Jakarta-SemiBold', 'sans-serif'],
+        Asap: ['Asap', 'sans-serif'],
+        AsapBold: ['Asap-Bold', 'sans-serif'],
+        AsapExtraBold: ['Asap-ExtraBold', 'sans-serif'],
+        AsapExtraLight: ['Asap-ExtraLight', 'sans-serif'],
+        AsapLight: ['Asap-Light', 'sans-serif'],
+        AsapMedium: ['Asap-Medium', 'sans-serif'],
+        AsapSemiBold: ['Asap-SemiBold', 'sans-serif'],
       },
       colors: {
         primary: {
