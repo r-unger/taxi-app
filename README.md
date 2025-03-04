@@ -21,11 +21,16 @@ Je nachdem, welche Ideen ich als nächstes umsetzen will.
 Die Taxi App nutzt diese Technologien
 - React Native
 - Typescript
-- Tailwind
+- Tailwind/Nativewind
 
 Diese Features wurden bereits implementiert
 - Welcome-Screens
 - Registrierung, allerdings ohne Backend
-- Log-In, allerdings ohne Backend
 
-Weitere folgen...
+In der Planung
+- Log-In, allerdings ohne Backend
+- SQL-DB auf Serverseite
+- Einbindung einer Map, ggf. Routenplanung
+- Light-/Dark-Mode
+- OAuth2-Autorisierung
+- Zahlungsfunktion
