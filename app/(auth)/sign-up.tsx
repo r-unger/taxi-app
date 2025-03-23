@@ -7,6 +7,7 @@ import { useRouter, Link } from "expo-router";
 import { Alert, Image, ScrollView, Text, View } from 'react-native';
 import ReactNativeModal from 'react-native-modal';
 import { useSignUp } from '@clerk/clerk-expo'
+import { fetchAPI } from "@/lib/fetch";
 
 const SignUp = () => {
   const [showSuccessModal, setShowSuccessModal] = React.useState(false);
@@ -70,7 +71,29 @@ const SignUp = () => {
       // If verification was completed, set the session to active
       // and redirect the user
       if (signUpAttempt.status === 'complete') {
-        // TODO: Create a DB record for the user
+        // Create a DB record for the user
+        try {
+          await fetchAPI("/(api)/user", {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              name: form.name,
+              email: form.email,
+              clerkId: signUpAttempt.createdUserId,
+            }),
+          });
+        } catch (err: any) {
+          console.error(err);
+          Alert.alert("Error", err.errors[0].longMessage);
+          // TODO: continue with the user info from clerk,
+          // (because at least clerk got it right)
+          // send log entry to notify support
+          // By the way: clerk can be configured to accept
+          // a user name, too.
+        }
+
         await setActive({ session: signUpAttempt.createdSessionId })
         //        router.replace('/')
         setVerification({
