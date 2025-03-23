@@ -22,15 +22,16 @@ Die Taxi App nutzt diese Technologien
 - React Native
 - Typescript
 - Tailwind/Nativewind
+- OAuth2-Autorisierung über clerk.com
+- SQL-DB über neon.tech
 
 Diese Features wurden bereits implementiert
 - Welcome-Screens
-- Registrierung, allerdings ohne Backend
+- Registrierung, mit SQL-Backend
+- Log-In, (noch) ohne SQL-Backend
+- SQL-DB Zugriff über API Endpoint
 
 In der Planung
-- Log-In, allerdings ohne Backend
-- SQL-DB auf Serverseite
 - Einbindung einer Map, ggf. Routenplanung
 - Light-/Dark-Mode
-- OAuth2-Autorisierung
 - Zahlungsfunktion
